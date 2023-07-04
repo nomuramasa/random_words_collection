@@ -38,6 +38,18 @@
     </span>
   </div>
 
+  <?php
+    // ワード押下時の遷移先のサイト
+    if (!isset($_COOKIE['dest_site'])) {
+      $_COOKIE['dest_site'] = 'google';
+    }
+    $destSites = [
+      ['name' => 'google', 'color' => 'dark'],
+      ['name' => 'youtube', 'color' => 'danger'],
+      ['name' => 'twitter', 'color' => 'primary']
+    ];
+  ?>
+
   <!-- テーブルヘッダー -->
   <table class='table
     <?php if ($_COOKIE['dest_site'] == 'twitter') : ?>
@@ -50,19 +62,6 @@
       <tr class='row'>
         <th class='d-none d-sm-block col-2 col-lg-1'></th>
         <th class='col-10 col-sm-8 col-lg-9'>
-
-          <?php
-            // ワード押下時の遷移先のサイト
-            if (!isset($_COOKIE['dest_site'])) {
-              $_COOKIE['dest_site'] = 'google';
-            }
-            $destSites = [
-              ['name' => 'google', 'color' => 'dark'],
-              ['name' => 'youtube', 'color' => 'danger'],
-              ['name' => 'twitter', 'color' => 'primary']
-            ];
-          ?>
-
           <?php foreach ($destSites as $destSite) : ?>
             <a id='request_ajax' onClick="changeDestSite('<?php echo $destSite['name']; ?>')" class='btn btn-<?php echo $destSite['color']; ?> text-light btn-sm <?php if ($_COOKIE['dest_site'] != $destSite['name']) : ?>mute<?php endif; ?>'>
               <?php echo $destSite['name']; ?>
