@@ -1,0 +1,495 @@
+/* リンク */
+a {
+	color: #000
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+/* ナビゲーションの色 */
+nav a {
+	color: #fff;
+}
+
+nav a:hover {
+	color: #aaa;
+}
+
+/* 説明文の吹き出し */
+.balloon {
+	/*position: relative;*/
+	border: solid 3px #777;
+}
+
+.balloon:before {
+	content: "";
+	position: absolute;
+	bottom: -24px;
+	left: 50%;
+	margin-left: -15px;
+	border: 12px solid transparent;
+	border-top: 12px solid #FFF;
+	z-index: 2;
+}
+
+.balloon:after {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -17px;
+	border: 14px solid transparent;
+	border-top: 14px solid #777;
+	z-index: 1;
+}
+
+/* テーブルのヘッダー色 */
+.table>thead tr {
+	/* Google 黒 */
+	background-color: #e9ecef
+}
+
+.table.red>thead tr {
+	/* Youtue 赤 */
+	background-color: #fee;
+}
+
+.table.blue>thead tr {
+	/* Twitter 青 */
+	background-color: #def;
+}
+
+/* th下線の色 */
+.table.red thead th {
+	/* Youtue */
+	border-bottom: 2px solid #fbb;
+}
+
+.table.blue thead th {
+	/* Twitter */
+	border-bottom: 2px solid #adf;
+}
+
+/* thとtdの上線の色 */
+.table.red th,
+.table td {
+	/* Youtue */
+	border-top: 1px solid #fbb;
+}
+
+.table.blue th,
+.table td {
+	/* Twitter */
+	border-top: 1px solid #adf;
+}
+
+/* テーブルの下線の色 */
+.table>tbody>tr>td {
+	/* Google 黒 */
+	border-top: 2px solid #dee2e6
+}
+
+.table.red>tbody>tr>td {
+	/* Youtue 赤 */
+	border-top: 2px solid #fbb;
+}
+
+.table.blue>tbody>tr>td {
+	/* Twitter 青 */
+	border-top: 2px solid #adf;
+}
+
+/* サイトタグ切り替え */
+.mute {
+	opacity: 0.2
+}
+
+/* Newの色 */
+.new {
+	color: #fbb
+}
+
+
+/* 検索ワード */
+.word a {
+	color: #000;
+	font-weight: bold;
+}
+
+/* 単語ホバー */
+.table .word a:hover {
+	/* Google */
+	color: #777;
+}
+
+.table.red .word a:hover {
+	/* Youtue */
+	color: #f77;
+}
+
+.table.blue .word a:hover {
+	/* Twitter */
+	color: #0af;
+}
+
+/* 星の色 */
+.star {
+	color: #ffcc00 !important;
+	cursor: pointer;
+}
+
+.star:hover {
+	color: #ffbf00 !important;
+}
+
+.nostar {
+	color: rgba(235, 235, 235, 1) !important;
+	cursor: pointer;
+}
+
+.nostar:hover {
+	color: rgba(200, 200, 200, 1) !important;
+}
+
+
+/* ごみ箱の色　 */
+.trash {
+	color: rgba(180, 180, 180, 1) !important;
+	cursor: pointer;
+}
+
+.trash:hover {
+	color: rgba(100, 100, 100, 1) !important;
+}
+
+
+/* rowの横幅12分の1.5 */
+@media screen and (max-width:575px) {
+
+	/* 小スマホ限定 */
+	.col-1_half {
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
+}
+
+/* 新ワードボタン周辺 */
+.btn-div {
+	margin-bottom: 2.2rem !important;
+	margin-top: 2.2rem !important;
+}
+
+/* 新ワードボタン */
+#make_word.btn-warning {
+	color: white;
+	background-color: #ee6e00;
+	border-color: #ee6e00;
+}
+
+#make_word.btn-warning:hover {
+	background-color: #dd6e00;
+	border-color: #dd6e00;
+}
+
+/* はてなマークをランダムに配置 */
+.hatena1 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.5em;
+	opacity: 0.3;
+	top: -74%;
+	transform: rotate(-37deg);
+	left: 2%;
+}
+
+.hatena2 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.7em;
+	opacity: 0.5;
+	top: 45%;
+	transform: rotate(-16deg);
+	left: 32%;
+}
+
+.hatena3 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.1em;
+	opacity: 0.1;
+	top: -94%;
+	transform: rotate(-41deg);
+	left: 14%;
+}
+
+.hatena4 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.4em;
+	opacity: 0.4;
+	top: -96%;
+	transform: rotate(-43deg);
+	left: 11%;
+}
+
+.hatena5 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.5em;
+	opacity: 0.5;
+	top: 34%;
+	transform: rotate(-30deg);
+	left: 15%;
+}
+
+.hatena6 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.9em;
+	opacity: 0.2;
+	top: 66%;
+	transform: rotate(-32deg);
+	left: 10%;
+}
+
+.hatena7 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.1em;
+	opacity: 0.4;
+	top: 32%;
+	transform: rotate(-34deg);
+	left: 9%;
+}
+
+.hatena8 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.1em;
+	opacity: 0.5;
+	top: -55%;
+	transform: rotate(-16deg);
+	left: 31%;
+}
+
+.hatena9 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.7em;
+	opacity: 0.1;
+	top: -168%;
+	transform: rotate(-19deg);
+	left: 20%;
+}
+
+.hatena10 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.2em;
+	opacity: 0.5;
+	top: -18%;
+	transform: rotate(-24deg);
+	left: 37%;
+}
+
+.hatena11 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.8em;
+	opacity: 0.2;
+	top: -122%;
+	transform: rotate(-38deg);
+	left: 19%;
+}
+
+.hatena12 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.7em;
+	opacity: 0.3;
+	top: 36%;
+	transform: rotate(-14deg);
+	left: 38%;
+}
+
+.hatena13 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 2em;
+	opacity: 0.4;
+	top: -40%;
+	transform: rotate(-16deg);
+	left: 3%;
+}
+
+.hatena14 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.8em;
+	opacity: 0.4;
+	top: 76%;
+	transform: rotate(-36deg);
+	left: 4%;
+}
+
+.hatena15 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.5em;
+	opacity: 0.3;
+	top: -154%;
+	transform: rotate(-15deg);
+	left: 21%;
+}
+
+.hatena16 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.6em;
+	opacity: 0.3;
+	top: 38%;
+	transform: rotate(38deg);
+	right: 7%;
+}
+
+.hatena17 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.9em;
+	opacity: 0.2;
+	top: 19%;
+	transform: rotate(33deg);
+	right: 15%;
+}
+
+.hatena18 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.8em;
+	opacity: 0.4;
+	top: -108%;
+	transform: rotate(24deg);
+	right: 12%;
+}
+
+.hatena19 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.6em;
+	opacity: 0.2;
+	top: -162%;
+	transform: rotate(19deg);
+	right: 26%;
+}
+
+.hatena20 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.3em;
+	opacity: 0.3;
+	top: -7%;
+	transform: rotate(22deg);
+	right: 31%;
+}
+
+.hatena21 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.8em;
+	opacity: 0.5;
+	top: -177%;
+	transform: rotate(33deg);
+	right: 20%;
+}
+
+.hatena22 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.4em;
+	opacity: 0.1;
+	top: -67%;
+	transform: rotate(25deg);
+	right: 6%;
+}
+
+.hatena23 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.6em;
+	opacity: 0.4;
+	top: -1%;
+	transform: rotate(28deg);
+	right: 14%;
+}
+
+.hatena24 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.7em;
+	opacity: 0.2;
+	top: -56%;
+	transform: rotate(21deg);
+	right: 6%;
+}
+
+.hatena25 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.9em;
+	opacity: 0.4;
+	top: -17%;
+	transform: rotate(20deg);
+	right: 25%;
+}
+
+.hatena26 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 2em;
+	opacity: 0.1;
+	top: 93%;
+	transform: rotate(40deg);
+	right: 34%;
+}
+
+.hatena27 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 2em;
+	opacity: 0.1;
+	top: -79%;
+	transform: rotate(35deg);
+	right: 23%;
+}
+
+.hatena28 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.4em;
+	opacity: 0.3;
+	top: -24%;
+	transform: rotate(38deg);
+	right: 21%;
+}
+
+.hatena29 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.9em;
+	opacity: 0.3;
+	top: 87%;
+	transform: rotate(20deg);
+	right: 20%;
+}
+
+.hatena30 {
+	color: #ff6e00;
+	position: absolute;
+	font-size: 1.1em;
+	opacity: 0.1;
+	top: 8%;
+	transform: rotate(28deg);
+	right: 14%;
+}
