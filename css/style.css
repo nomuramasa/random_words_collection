@@ -19,7 +19,6 @@ nav a:hover {
 
 /* 説明文の吹き出し */
 .balloon {
-	/*position: relative;*/
 	border: solid 3px #777;
 }
 
@@ -73,15 +72,15 @@ nav a:hover {
 }
 
 /* thとtdの上線の色 */
+/* Youtue */
 .table.red th,
 .table td {
-	/* Youtue */
 	border-top: 1px solid #fbb;
 }
 
+/* Twitter */
 .table.blue th,
 .table td {
-	/* Twitter */
 	border-top: 1px solid #adf;
 }
 
@@ -110,7 +109,6 @@ nav a:hover {
 .new {
 	color: #fbb
 }
-
 
 /* 検索ワード */
 .word a {
@@ -172,6 +170,11 @@ nav a:hover {
 	.col-1_half {
 		flex: 0 0 12.5%;
 		max-width: 12.5%;
+	}
+
+	.row {
+    margin-right: 0;
+    margin-left: 0;
 	}
 }
 
