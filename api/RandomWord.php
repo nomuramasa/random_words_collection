@@ -13,8 +13,7 @@ class RandomWord
     // ワード取得方法を無作為に決定
     $wordGetMethodNum = rand(1, 2);
 
-    if (1) {
-    // if ($wordGetMethodNum === 1) {
+    if ($wordGetMethodNum === 1) {
       // パターン1: Weblio辞典からワード取得
       $this->getFromWeblio();
     } else {
@@ -27,7 +26,6 @@ class RandomWord
   private function getFromWeblio() :void
   {
     // Weblio辞典のURLからリダイレクト先URLを取得し、URL末尾のワードのみ取得
-
     $ch = curl_init(self::WEBLIO_RANDOM_WORD_SITE_URL);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
@@ -36,7 +34,6 @@ class RandomWord
     curl_close($ch);
     $encordedWord = str_replace(self::WEBLIO_REDIRECTED_SITE_URL_EXCEPT_WORD, '', $redirectedUrl);
     $this->word = urldecode($encordedWord);
-
 
     // ワード内の「+」をスペースに変換
     if (strpos($this->word, '+') !== false) {
