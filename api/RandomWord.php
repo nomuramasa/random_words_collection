@@ -6,10 +6,10 @@ class RandomWord
 
   public function get(): string
   {
-      // パターン2: WikipediaのAPIからワード取得
       return $this->getFromWikipedia();
   }
 
+  // WikipediaのAPIからワード取得
   private function getFromWikipedia() :string
   {
     while (true) {
